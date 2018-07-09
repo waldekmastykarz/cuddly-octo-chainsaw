@@ -1,0 +1,27 @@
+<script src="https://rawgit.com/waldekmastykarz/weather-widget/master/jquery-2.1.1.min.js"
+        integrity="sha384-vvRXM99d7JwL0kH2PSSjeBFoPjiu9B3h/NimGGNx3Kyi7KrRsPiRO0LwRZ4mbK0Y"
+        crossorigin="anonymous"></script>
+<script src="https://rawgit.com/waldekmastykarz/weather-widget/master/jquery.simpleWeather.min.js"
+        integrity="sha384-uLK64tVC8xozcHL4Wt8w1TzhaXJNk35Gk1Pu9xhnQ+D938TddD6D75VHLwMsV925"
+        crossorigin="anonymous"></script>
+<link href="https://rawgit.com/waldekmastykarz/weather-widget/master/styles.css" rel="stylesheet" type="text/css" />
+<div class="weather"></div>
+<script>
+  $(function () {
+    var location = 'Seattle, WA';
+    $.simpleWeather({
+        location: location,
+        woeid: '',
+        unit: 'f',
+        success: function(weather) {
+          var html =
+              '<h2><i class="icon' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>\
+              <ul><li>' + weather.city + ' ' + weather.region + '</li></ul>';
+          $('.weather').html(html);
+        },
+        error: function(error) {
+          $('.weather').html('<p>' + error.message + '</p>');
+        }
+    });
+  });
+</script>
