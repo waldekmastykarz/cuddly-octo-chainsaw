@@ -1,0 +1,7 @@
+jquery-2.1.1.min.js
+
+vvRXM99d7JwL0kH2PSSjeBFoPjiu9B3h/NimGGNx3Kyi7KrRsPiRO0LwRZ4mbK0Y
+
+jquery.simpleWeather.min.js
+
+OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb
