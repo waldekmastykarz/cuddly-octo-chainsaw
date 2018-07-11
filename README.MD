@@ -4,6 +4,12 @@
 
 ![Safety or death](https://media.giphy.com/media/Np822BSj0v2dG/giphy.gif)
 
+![Sunny in Seattle!](./screenshot.png)
+
+- shows current weather in any location in the world
+- choose between Fahrenheit and Celsius
+- no installation required
+
 ## Minimal path to awesome
 
 Put this in SharePoint:
